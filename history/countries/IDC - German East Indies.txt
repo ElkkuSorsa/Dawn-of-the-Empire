@@ -1,0 +1,30 @@
+oob = "IDC_1936"
+set_research_slots = 2
+set_stability = 0.37
+set_war_support = 0.12
+capital = 286
+
+GER = {
+	set_autonomy = {
+		target = IDC
+		autonomous_state = autonomy_colony
+	}
+}
+
+set_popularities = {
+	democratic = 22
+	neutrality = 56
+	communism = 20
+	fascism = 2
+}
+
+set_politics = {
+	ruling_party = neutrality
+	elections_allowed = no
+}
+
+add_ideas = {
+	#laws
+	war_economy
+	extensive_conscription
+}
