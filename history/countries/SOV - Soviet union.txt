@@ -1,0 +1,23 @@
+oob = ""
+set_research_slots = 4
+set_stability = 0.25
+set_war_support = 0.3
+capital = 219
+
+set_popularities = {
+	democratic = 5
+	neutrality = 60
+	communism = 5
+	fascism = 30
+}
+
+set_politics = {
+	ruling_party = neutrality
+	elections_allowed = no
+}
+
+add_ideas = {
+	#laws
+	war_economy
+	extensive_conscription
+}
