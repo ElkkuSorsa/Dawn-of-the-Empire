@@ -4,13 +4,6 @@ set_stability = 0.37
 set_war_support = 0.12
 capital = 286
 
-GER = {
-	set_autonomy = {
-		target = IDC
-		autonomous_state = autonomy_colony
-	}
-}
-
 set_popularities = {
 	democratic = 22
 	neutrality = 56

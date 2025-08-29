@@ -23,8 +23,7 @@ state = {
 			11401 3
 		}
 
-		owner = GER
-		add_core_of = GER
+		owner = CZE
 		add_core_of = CZE
 
 		buildings = {

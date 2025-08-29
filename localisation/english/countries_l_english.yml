@@ -1,0 +1,10 @@
+﻿l_english:
+ GER: "Holy Roman Empire"
+ GER_ADJ: "Holy Roman"
+ GER_DEF: "the Holy Roman Empire"
+ IDC_subject: "$OVERLORDADJ$ East Indies"
+ IDC_subject_ADJ: "$OVERLORDADJ$ East Indian"
+ IDC_subject_DEF: "the $OVERLORDADJ$ East Indies"
+ IDC: "Indochina"
+ IDC_ADJ: "Indochinese"
+ IDC_DEF: "Indochina"

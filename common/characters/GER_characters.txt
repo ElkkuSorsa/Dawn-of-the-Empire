@@ -3,12 +3,12 @@ characters = {
 		name = "Alfred Hugenberg"
 		portraits = {
 			civilian = {
-				larrge = ""
+				large = ""
 			}
 		}
 		country_leader = {
 			ideology = national_conservatism
-			traits = 
+			traits = { ardent_nationalist }
 		}
 	}
 }
