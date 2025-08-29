@@ -1,0 +1,114 @@
+ideas = {
+
+	country = {
+
+        FRA_economy_in_shambles = { 
+			modifier = {
+				production_speed_buildings_factor = -0.15
+                consumer_goods_factor = 0.25
+			}
+		}
+
+		FRA_remnants_of_democracy = { 
+			modifier = {
+				political_power_factor = -0.15
+				stability_weekly = -0.002
+                ultra_nationalism_drift = -0.04
+			}
+		}
+        
+		FRA_fervent_revanchism = { 
+			modifier = {
+			    war_support_factor = 0.1
+                conscription_factor = 0.05
+                production_speed_arms_factory_factor = 0.05
+		    }
+        }
+
+        FRA_fervent_revanchism2 = { 
+			modifier = {
+			    war_support_factor = 0.1
+                conscription_factor = 0.05
+                production_speed_arms_factory_factor = 0.15
+                industrial_capacity_factory = 0.05
+                consumer_goods_factor = 0.1
+		    }
+        }
+        
+		FRA_poorly_organized_army = { 
+			modifier = {
+			    army_org_factor = -0.1
+                army_defence_factor = -0.1
+                army_attack_factor = -0.1
+                land_doctrine_cost_factor = 0.25
+		    }
+        }
+
+        FRA_economic_populism_idea = { 
+			modifier = {
+			    consumer_goods_factor = -0.15
+		    }
+        }
+
+        FRA_nationalistic_propaganda = { 
+			modifier = {
+			    war_support_weekly = 0.003
+                ultra_nationalism_drift = 0.02
+		    }
+        }
+
+        FRA_new_state_building = { 
+			modifier = {
+			    political_power_factor = 0.1
+                ultra_nationalism_drift = 0.03
+		    }
+        }
+
+        FRA_new_state_building_militarism = { 
+			modifier = {
+			    political_power_factor = 0.1
+                ultra_nationalism_drift = 0.03
+                war_support_factor = 0.1
+                army_morale_factor = 0.1
+                conscription_factor = 0.1
+                experience_gain_army_factor = 0.15
+		    }
+        }
+
+        FRA_new_state_building_militarism2 = { 
+			modifier = {
+			    political_power_factor = 0.1
+                ultra_nationalism_drift = 0.03
+                war_support_factor = 0.1
+                army_morale_factor = 0.1
+                conscription_factor = 0.15
+                experience_gain_army_factor = 0.2
+                land_doctrine_cost_factor = -0.1
+                stability_factor = 0.1
+		    }
+        }
+
+        FRA_new_state_building_corporatism = { 
+			modifier = {
+			    political_power_factor = 0.1
+                ultra_nationalism_drift = 0.03
+                production_speed_buildings_factor = 0.1
+                consumer_goods_factor = -0.15
+                industrial_capacity_factory = 0.1
+                industrial_capacity_dockyard = 0.1
+		    }
+        }
+
+        FRA_new_state_building_corporatism2 = { 
+			modifier = {
+			    political_power_factor = 0.1
+                ultra_nationalism_drift = 0.05
+                production_speed_buildings_factor = 0.15
+                consumer_goods_factor = -0.15
+                industrial_capacity_factory = 0.1
+                industrial_capacity_dockyard = 0.1
+                political_advisor_cost_factor = -0.2
+		    }
+        }
+    }
+}

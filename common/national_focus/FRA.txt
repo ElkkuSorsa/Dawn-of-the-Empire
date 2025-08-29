@@ -14,12 +14,477 @@ focus_tree = {
     default = no
 
     focus = {
+
         id = FRA_unify_national_front
         icon = GFX_focus_ITA_generic_fascist_workers
         x = 25
         y = 0
 
 		
+        completion_reward = { 
+
+        add_political_power = 25
+        
+        add_stability = 0.05
+
+        add_popularity = {
+            ideology = ultra_nationalism
+            popularity = 0.1
+        }
+
+
+        }  
+
+		cost = 5
+    
+
+    }
+
+    focus = {
+        
+        id = FRA_nail_in_the_coffin
+        icon = GFX_focus_usa_voter_registration_act
+        x = 26
+        y = 1
+
+        prerequisite = {focus = FRA_unify_national_front}
+
+        completion_reward = { 
+
+        add_political_power = 100
+
+        add_popularity = {
+            ideology = ultra_nationalism
+            popularity = 0.05
+        }
+
+        add_stability = -0.15
+
+        remove_ideas = FRA_remnants_of_democracy
+
+        }  
+
+		cost = 10
+    
+
+    }
+
+    focus = {
+        
+        id = FRA_ideological_rallies
+        icon = GFX_goal_support_fascism
+        x = 23
+        y = 1
+
+        prerequisite = {focus = FRA_unify_national_front}
+
+        completion_reward = { 
+        
+        add_popularity = {
+            ideology = ultra_nationalism
+            popularity = 0.1
+        }
+
+        add_war_support = 0.05
+
+        }  
+
+		cost = 5
+    
+
+    }
+
+    focus = {
+        
+        id = FRA_political_purges
+        icon = GFX_focus_RAJ_i_am_death
+        x = 27
+        y = 2
+
+        prerequisite = {focus = FRA_nail_in_the_coffin}
+
+        completion_reward = { 
+        
+        
+
+        }  
+
+		cost = 5
+    
+
+    }
+
+    focus = {
+        
+        id = FRA_revise_legislation
+        icon = GFX_SOV_japanese_overtures_ccp_2d_sov_compatibility
+        x = 26
+        y = 3
+
+        prerequisite = {focus = FRA_political_purges}
+
+        completion_reward = { 
+        
+        
+
+        }  
+
+		cost = 5
+    
+
+    }
+
+    focus = {
+        
+        id = FRA_army_loyalty
+        icon = GFX_focus_RAJ_a_private_military
+        x = 28
+        y = 3
+
+        prerequisite = {focus = FRA_political_purges}
+
+        completion_reward = { 
+        
+        
+
+        }  
+
+		cost = 5
+    
+
+    }
+
+    focus = {
+        
+        id = FRA_secured_administration
+        icon = GFX_focus_generic_improve_the_administration
+        x = 27
+        y = 5
+
+        prerequisite = {focus = FRA_revise_legislation}
+
+        prerequisite = {focus = FRA_army_loyalty}
+
+        completion_reward = { 
+        
+        
+
+        }  
+
+		cost = 5
+    
+
+    }
+
+    focus = {
+        
+        id = FRA_propaganda_campaign
+        icon = GFX_focus_generic_fascist_propaganda
+        x = 24
+        y = 2
+
+        prerequisite = {focus = FRA_nail_in_the_coffin}
+
+        completion_reward = { 
+        
+        add_timed_idea = {idea = FRA_nationalistic_propaganda days = 180}
+
+        }  
+
+		cost = 5
+    
+
+    }
+
+    focus = {
+        
+        id = FRA_economic_populism
+        icon = GFX_focus_RAJ_special_economic_zones
+        x = 22
+        y = 3
+
+        prerequisite = {focus = FRA_nail_in_the_coffin}
+
+        prerequisite = {focus = FRA_ideological_rallies}
+
+        completion_reward = { 
+        
+        add_stability = 0.05
+
+        add_timed_idea = {idea = FRA_economic_populism_idea days = 365}
+
+        }  
+
+		cost = 5
+
+    }
+
+    focus = {
+        
+        id = FRA_dirigist_economics
+        icon = GFX_focus_generic_industry_3
+        x = 21
+        y = 4
+
+
+        mutually_exclusive = {focus = FRA_laissez_faire_policies}
+
+        prerequisite = {focus = FRA_economic_populism}
+
+        available = {
+            NOT = {has_idea = FRA_economic_populism_idea}
+        }
+
+        completion_reward = { 
+        
+        remove_ideas = FRA_economy_in_shambles
+
+        }  
+
+		cost = 5
+
+    }
+
+    focus = {
+        
+        id = FRA_nationalization_of_industry
+        icon = GFX_focus_DEN_heavy_regulations
+        x = 21
+        y = 5
+
+        prerequisite = {focus = FRA_dirigist_economics}
+
+        completion_reward = { 
+        
+
+        }  
+
+		cost = 5
+
+    }
+
+    focus = {
+        
+        id = FRA_laissez_faire_policies
+        icon = GFX_focus_generic_industrialists
+        x = 25
+        y = 4
+
+        mutually_exclusive = {focus = FRA_dirigist_economics}
+
+        prerequisite = {focus = FRA_economic_populism}
+
+        available = {
+            NOT = {has_idea = FRA_economic_populism_idea}
+        }
+
+        completion_reward = { 
+        
+        remove_ideas = FRA_economy_in_shambles
+
+        }  
+
+		cost = 5
+
+    }
+
+    focus = {
+        
+        id = FRA_invite_technocrats
+        icon = GFX_focus_ARG_fascist_researchers
+        x = 23
+        y = 5
+
+        prerequisite = {
+            focus = FRA_laissez_faire_policies
+            focus = FRA_dirigist_economics
+        }
+
+        available = {
+            NOT = {has_idea = FRA_economic_populism_idea}
+        }
+
+        completion_reward = { 
+        
+        remove_ideas = FRA_economy_in_shambles
+
+        }  
+
+		cost = 5
+
+    }
+
+    focus = {
+        
+        id = FRA_sponsor_industrialists
+        icon = GFX_focus_CHL_enlarge_the_textile_industries
+        x = 25
+        y = 5
+
+        prerequisite = {
+            focus = FRA_laissez_faire_policies
+        }
+
+        available = {
+            NOT = {has_idea = FRA_economic_populism_idea}
+        }
+
+        completion_reward = { 
+        
+        remove_ideas = FRA_economy_in_shambles
+
+        }  
+
+		cost = 5
+
+    }
+
+    focus = {
+        
+        id = FRA_building_a_new_state
+        icon = GFX_focus_generic_vichy_france_triumphant_focus
+        x = 18
+        y = 2
+
+        prerequisite = {focus = FRA_nail_in_the_coffin}
+
+        prerequisite = {focus = FRA_ideological_rallies}
+
+        completion_reward = { 
+        
+        add_ideas = FRA_new_state_building
+
+        }  
+
+		cost = 5
+
+    }
+
+    focus = {
+        
+        id = FRA_increase_defence_spending
+        icon = GFX_SOV_expand_the_aircraft_industry_ccp_2d_sov_compatibility
+        x = 14
+        y = 3
+
+        prerequisite = {focus = FRA_building_a_new_state}
+
+        completion_reward = { 
+        
+        swap_ideas = {
+            remove_idea = FRA_fervent_revanchism
+            add_idea = FRA_fervent_revanchism2
+        }
+
+        }  
+
+		cost = 10
+
+    }
+
+    focus = {
+        
+        id = FRA_militaristic_agenda
+        icon = GFX_focus_generic_attack_vichy_france
+        x = 17
+        y = 3
+
+        mutually_exclusive = {focus = FRA_corporatist_agenda}
+
+        prerequisite = {focus = FRA_building_a_new_state}
+
+        completion_reward = { 
+        
+        swap_ideas = {
+            remove_idea = FRA_new_state_building
+            add_idea = FRA_new_state_building_militarism
+        }
+
+        }  
+
+		cost = 10
+
+    }
+
+    focus = {
+        
+        id = FRA_army_state
+        icon = GFX_SOV_depoliticize_the_military_ccp_2d_sov_compatibility
+        x = 17
+        y = 5
+
+        prerequisite = {focus = FRA_militaristic_agenda}
+
+        completion_reward = { 
+        
+        swap_ideas = {
+            remove_idea = FRA_new_state_building_militarism
+            add_idea = FRA_new_state_building_militarism2
+        }
+
+        }  
+
+		cost = 10
+
+    }
+
+    focus = {
+        
+        id = FRA_corporatist_agenda
+        icon = GFX_focus_ICE_state_corporatism
+        x = 19
+        y = 3
+
+        mutually_exclusive = {focus = FRA_militaristic_agenda}
+
+        prerequisite = {focus = FRA_building_a_new_state}
+
+        completion_reward = { 
+        
+        swap_ideas = {
+            remove_idea = FRA_new_state_building
+            add_idea = FRA_new_state_building_corporatism
+        }
+
+        }  
+
+		cost = 10
+
+    }
+
+    focus = {
+        
+        id = FRA_french_corporate_state
+        icon = GFX_focus_generic_modernize_industry
+        x = 19
+        y = 5
+
+        prerequisite = {focus = FRA_corporatist_agenda}
+
+        completion_reward = { 
+        
+        swap_ideas = {
+            remove_idea = FRA_new_state_building_corporatism
+            add_idea = FRA_new_state_building_corporatism2
+        }
+
+        }  
+
+		cost = 10
+
+    }
+
+    focus = {
+        
+        id = FRA_assert_revanchist_claims
+        icon = GFX_focus_focus_fra_border
+        x = 23
+        y = 6
+
+        prerequisite = {focus = FRA_secured_administration}
+
+        prerequisite = {focus = FRA_army_state focus = FRA_french_corporate_state}
+
         completion_reward = { 
         
         

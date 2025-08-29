@@ -4,6 +4,28 @@ add_ideas = {
 	civilian_economy
 	limited_conscription
 	limited_exports
+    FRA_remnants_of_democracy
+    FRA_fervent_revanchism
+    FRA_poorly_organized_army 
+    FRA_economy_in_shambles
+}
+
+set_politics = {
+	ruling_party = ultra_nationalism
+	last_election = "1907.7.7"
+	election_frequency = 60
+	elections_allowed = no
+}
+
+set_popularities = {
+	ultra_nationalism = 31
+    despotism = 4
+    oligarchy = 7
+    conservatism = 12
+    social_liberalism = 7
+    market_liberalism = 6
+    democratic_socialism = 10
+    radical_socialism = 23
 }
 
 set_research_slots = 4
