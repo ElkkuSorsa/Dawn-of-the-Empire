@@ -1,0 +1,12 @@
+capital = 16	
+
+add_ideas = {
+	civilian_economy
+	limited_conscription
+	limited_exports
+}
+
+set_research_slots = 4
+set_convoys = 127
+set_stability = 0.42
+set_war_support = 0.27

@@ -1,0 +1,34 @@
+focus_tree = {
+    id = FRA_focus_tree
+    country = {
+        factor = 0
+
+        modifier = {
+            add = 10
+            tag = FRA
+        }
+    }
+
+    continuous_focus_position = { x = 100 y = 2000 }
+
+    default = no
+
+    focus = {
+        id = FRA_unify_national_front
+        icon = GFX_focus_ITA_generic_fascist_workers
+        x = 25
+        y = 0
+
+		
+        completion_reward = { 
+        
+        
+
+        }  
+
+		cost = 5
+    
+
+    }
+
+}
