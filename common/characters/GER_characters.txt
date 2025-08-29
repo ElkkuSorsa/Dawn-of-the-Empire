@@ -1,0 +1,14 @@
+characters = {
+	GER_hugenberg = {
+		name = "Alfred Hugenberg"
+		portraits = {
+			civilian = {
+				larrge = ""
+			}
+		}
+		country_leader = {
+			ideology = national_conservatism
+			traits = 
+		}
+	}
+}

@@ -1,0 +1,72 @@
+ideologies = {
+	ultra_nationalism = {
+		types = {
+			ultra_nationalism_sub = {}
+		}
+		color = { 30 30 30 }
+	}
+	despotism = {
+		types = {
+			despotism_sub = {}
+			absolute_monarchy = {
+				can_be_randomly_selected = no
+			}
+		}
+		color = { 60 60 60 }
+	}
+	oligarchy = {
+		types = {
+			oligarchy_sub = {}
+			plutocracy = {
+				color = { 150 0 150 }
+				can_be_randomly_selected = no
+			}
+		}
+		color = { 200 80 0 }
+	}
+	conservatism = {
+		types = {
+			conservatism_sub = {}
+			national_conservatism = {
+				color = { 0 75 120 }
+				can_be_randomly_selected = no
+			}
+		}
+		color = { 0 160 250 }
+	}
+	social_liberalism = {
+		types = {
+			social_liberalism_sub = {}
+			progressivism = {
+				color = { 255 140 0 }
+			}
+		}
+		color = { 255 200 0 }
+	}
+	market_liberalism = {
+		types = {
+			market_liberalism_sub = {}
+			classical_liberalism = {}
+		}
+		color = { 250 170 20 }
+	}
+	democratic_socialism = {
+		types = {
+			democratic_socialism_sub = {}
+			social_democracy = {
+				color = { 255 100 100 }
+			}
+		}
+		color = { 250 70 60 }
+	}
+	radical_socialism = {
+		types = {
+			radical_socialism_sub = {}
+			communism = {
+				color = { 100 0 0 }
+			}
+		}
+		color = { 220 0 0 }
+	}
+
+}
