@@ -3,12 +3,76 @@ characters = {
 		name = "Alfred Hugenberg"
 		portraits = {
 			civilian = {
-				large = ""
+				large = "gfx/leaders/GER/GER_hugenverg.dds"
 			}
 		}
 		country_leader = {
 			ideology = national_conservatism
 			traits = { ardent_nationalist }
+		}
+	}
+
+	GER_westarp = {
+		name = "Kuno von Westarp"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GER/GER_westarp.dds"
+			}
+		}
+		country_leader = {
+			ideology = national_conservatism
+			traits = { conservative_politician }
+		}
+	}
+
+	GER_thalmann = {
+		name = "Ernst Thälmann"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GER/GER_thalmann.dds"
+			}
+		}
+		country_leader = {
+			ideology = communism
+			traits = { revolutionary_socialist }
+		}
+	}
+
+	GER_vogel = {
+		name = "Hans Vogel"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GER/GER_vogel.dds"
+			}
+		}
+		country_leader = {
+			ideology = social_democracy
+			traits = { pragmatic_socialist }
+		}
+	}
+
+	GER_adenauer = {
+		name = "Konrad Adenauer"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GER/GER_adenauer.dds"
+			}
+		}
+		country_leader = {
+			ideology = social_liberalism
+		}
+	}
+
+	GER_reichtag = {
+		name = "Reichtag"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GER/Reichtag.dds"
+			}
+		}
+		country_leader = {
+			ideology = national_conservatism
+			traits = { minority_government }
 		}
 	}
 }

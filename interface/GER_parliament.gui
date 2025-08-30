@@ -1,0 +1,105 @@
+guiTypes = {
+	containerWindowType = {
+		name = "parliament_gui_container"
+		position = { x = 0 y = 0 }
+		size = { width = 516 height = 540 }
+
+		containerWindowType = {
+			name = "parliament_semicircle_main_container"
+			position = { x = 0 y = 25 }
+			size = { width = 507 height = 325 }
+
+			containerWindowType = {
+				name = "parliament_main_entry"
+				position = { x = 205 y = 190 }
+			}
+			
+			gridboxtype = {
+				name = "parliament_semicircle_main_grid"
+				position = { x = 20 y = 25 }
+				size = { width = 100%% height = 100%% }
+				slotsize = { width = 100%% height = 0 }
+				max_slots_horizontal = 1
+				add_horizontal = no
+			}
+		}
+
+		instantTextboxType = {
+			name = "parliament_seats"
+			position = { x = 0 y = 240 }
+			font = "hoi_36header"
+			maxWidth = 516
+			maxHeight = 350
+			format = center
+			text = "700"
+		}
+
+		instantTextboxType = {
+			name = "parliament_title"
+			position = { x = 0 y = 310 }
+			font = "hoi_30header"
+			maxWidth = 516
+			maxHeight = 350
+			format = center
+			text = "parliament_main_text"
+		}
+
+		instantTextboxType = {
+			name = "parliament_description"
+			position = { x = 0 y = 350 }
+			font = "hoi_26mbs"
+			maxWidth = 516
+			maxHeight = 350
+			format = center
+			text = "parliament_description_text"
+		}
+
+		gridboxtype = {
+			name = "parliament_member_grid"
+			position = { x = -150 y = 400 }
+			size = { width = 100%% height = 100%% }
+			slotsize = { width = 280 height = 18 }
+			max_slots_vertical = 25
+			add_horizontal = no
+		}
+	}
+
+
+	containerWindowType = {
+		name = "parliament_semicircle_main_entry"
+		position = { x = 0 y = 0 }
+		scale = 0.75
+		iconType = {
+			name = "parliament_semicircle_main_icon"
+			spriteType = "GFX_parliament_party_icon"
+			position = { x = 0 y = 0 }
+			pdx_tooltip_delayed = "parliament_party_description"
+		}
+	}
+
+	containerWindowType = {
+		name = "parliament_member_entry"
+		position = { x = 20 y = 0 }
+		size = { width = 500 height = 100 }
+
+		iconType = {
+		 	name = "parliament_member_icon"
+		 	spriteType = "GFX_parliament_party_icon"
+		 	position = { x = -20 y = 3 }
+		 	pdx_tooltip = "parliament_member_text"
+		 	pdx_tooltip_delayed = "parliament_party_description"
+		}
+		instantTextboxType = {
+			name = "parliament_member_text"
+			position = { x = 0 y = 0 }
+			font = "hoi_20b"
+			maxWidth = 4000
+			maxHeight = 16
+			format = left
+			text = "parliament_member_text"
+			pdx_tooltip = "parliament_member_text"
+			pdx_tooltip_delayed = "parliament_party_description"
+		}
+		
+	}
+}

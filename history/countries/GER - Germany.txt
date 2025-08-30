@@ -40,7 +40,14 @@ set_autonomy = {
 	autonomous_state = autonomy_colony
 }
 
+create_faction = "Holy Roman System"
+
 recruit_character = GER_hugenberg
+recruit_character = GER_westarp
+recruit_character = GER_thalmann
+recruit_character = GER_vogel
+recruit_character = GER_adenauer
+recruit_character = GER_reichtag
 
 add_ideas = {
 	GER_empire_of_compromises
@@ -49,7 +56,7 @@ add_ideas = {
 	GER_victory_in_the_weltkrieg
 }
 
-country_event = { id = GER_diet.1 days = 5 }
+country_event = { id = GER_reichtag.1 days = 2 }
 
 set_variable = { hra_cf = -0.25 }
 set_variable = { hra_mpf = -0.1 }
@@ -65,11 +72,11 @@ add_dynamic_modifier = {
 }
 
 set_popularities = {
-	ultra_nationalism = 5
-	despotism = 15
-	oligarchy = 5
-	conservatism = 27
-	social_liberalism = 10
+	ultra_nationalism = 7
+	despotism = 8
+	oligarchy = 0
+	conservatism = 25
+	social_liberalism = 22
 	market_liberalism = 15
 	democratic_socialism = 20
 	radical_socialism = 3
@@ -79,6 +86,8 @@ set_politics = {
 	ruling_party = conservatism
 	elections_allowed = no
 }
+
+parliament_gui_initial = yes
 
 if = {
 	limit = { has_dlc = "By Blood Alone" }
