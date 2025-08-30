@@ -5,7 +5,7 @@ ideas = {
         FRA_expanded_spy_network = { 
 			modifier = {
 				agency_upgrade_time = -0.2
-                new_operative_slot_bonus = 2
+                operative_slot = 2
 			}
 		}
 
