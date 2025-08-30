@@ -68,7 +68,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = promise_mild_reforms
+		id = promise_mild_reform
 		icon = GFX_focus_generic_political_reform
 		x = 1
 		y = 2
