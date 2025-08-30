@@ -12,6 +12,7 @@ state = {
 
 	history = {
 		owner = ITA
+		add_claim_by = GER
 		victory_points = { #Bologna
 			6606 5
 		}

@@ -1,10 +1,11 @@
-add_namespace = GER_diet
+add_namespace = GER_reichtag
 add_namespace = GER_news
+add_namespace = GER_elections
 
 country_event = {
-	id = GER_diet.1
-	title = "Kaiser Wilhelm II opens the Imperial Diet"
-	desc = GER_diet.1.d
+	id = GER_reichtag.1
+	title = "Imperial Minority Conscription Act"
+	desc = GER_reichtag.1.d
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -13,99 +14,135 @@ country_event = {
 		name = "Hail the Kaiser!"
 		add_stability = 0.07
 		hidden_effect = {
-			country_event = { id = GER_diet.2 days = 22 }
+			country_event = { id = GER_reichtag.2 days = 22 }
 		}
 	}
 }
 
 country_event = {
-	id = GER_diet.2
-	title = "Economic Recovery"
-	desc = GER_diet.2.d
+	id = GER_reichtag.2
+	title = "Centrist coalition parteners declare opposition to the Act"
+	desc = GER_reichtag.2.d
 
 	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {
-		name = "The Diet supports the chancellor's proposal"
-		add_stability = 0.03
-		custom_effect_tooltip = GER_right_better_chances_tt
-		add_popularity = {
-			ideology = conservatism
-			popularity = 0.025
-		}
-		hidden_effect = {
-			country_event = { id = GER_diet.3 days = 31 }
-		}
-	}
-
-	option = {
-		name = "The Diet supports the leftist proposal"
-		add_stability = 0.05
-		custom_effect_tooltip = GER_left_better_chances_tt
-		add_popularity = {
-			ideology = democratic_socialism
-			popularity = 0.025
-		}
-		hidden_effect = {
-			country_event = { id = GER_diet.3 days = 31 }
-		}
-	}
-}
-
-country_event = {
-	id = GER_diet.3
-	title = "Army Reforms"
-	desc = GER_diet.3.d
-
-	is_triggered_only = yes
-	fire_only_once = yes
-
-	option = {
-		name = "Bend the knee to the military"
+		name = "Traitors!"
 		add_stability = -0.05
-		add_timed_ideas = {
-			idea = GER_focused_military_spending
-			days = 365
-		}
+		add_war_support = -0.05
 		hidden_effect = {
-			country_event = { id = GER_diet.4 days = 21 }
-		}
-	}
-
-	option = {
-		name = "Resist military influence"
-		add_stability = 0.05
-		add_timed_ideas = {
-			idea = generic_neglected_military
-			days = 365
-		}
-		hidden_effect = {
-			country_event = { id = GER_diet.4 days = 21 }
+			country_event = { id = GER_reichtag.3 days = 25 }
 		}
 	}
 }
 
 country_event = {
-	id = GER_diet.4
-	title = "Austrian Question"
-	desc = GER_diet.4.d
+	id = GER_reichtag.3
+	title = "Chancellor Hugenberg resigns over the failed Act"
+	desc = GER_reichtag.3.d
 
 	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {
-		name = "Offer Austrians better representation"
-		add_stability = 0.07
-		hidden_effect = {
-			country_event = { id = GER_diet.5 days = 8 }
-		}
+		name = "Kaiser will call for new elections!"
+		custom_effect_tooltip = GER_new_elections_tt
+		promote_character = GER_reichtag
+		set_country_flag = elections_1936_active
 	}
 }
 
 country_event = {
-	id = GER_diet.5
-	title = "Austrian Representatives Walk Out"
+	id = GER_elections.1
+	title = "Elections of 1936"
+	desc = GER_elections.1.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = "SPD wins"
+		trigger = {
+			democratic_socialism > party_popularity@radical_socialism
+			democratic_socialism > party_popularity@social_liberalism
+			democratic_socialism > party_popularity@market_liberalism
+			democratic_socialism > party_popularity@conservatism
+		}
+		add_stability = 0.1
+		remove_ideas = GER_socialist_pressure
+		set_politics = {
+			ruling_party = democratic_socialism
+			elections_allowed = yes
+		}
+	}
+
+	option = {
+		name = "KPD wins"
+		trigger = {
+			radical_socialism > party_popularity@democratic_socialism
+			radical_socialism > party_popularity@social_liberalism
+			radical_socialism > party_popularity@market_liberalism
+			radical_socialism > party_popularity@conservatism
+		}
+		add_stability = -0.05
+		add_war_support = -0.05
+		set_politics = {
+			ruling_party = radical_socialism
+			elections_allowed = yes
+		}
+	}
+
+	option = {
+		name = "Zentrum wins"
+		trigger = {
+			social_liberalism > party_popularity@democratic_socialism
+			social_liberalism > party_popularity@radical_socialism
+			social_liberalism > party_popularity@market_liberalism
+			social_liberalism > party_popularity@conservatism
+		}
+		add_stability = 0.05
+		set_politics = {
+			ruling_party = social_liberalism
+			elections_allowed = yes
+		}
+	}
+
+	option = {
+		name = "DVP wins"
+		trigger = {
+			market_liberalism > party_popularity@democratic_socialism
+			market_liberalism > party_popularity@radical_socialism
+			market_liberalism > party_popularity@social_liberalism
+			market_liberalism > party_popularity@conservatism
+		}
+		add_stability = 0.05
+		set_politics = {
+			ruling_party = market_liberalism
+			elections_allowed = yes
+		}
+	}
+
+	option = {
+		name = "DNVP wins"
+		trigger = {
+			conservatism > party_popularity@democratic_socialism
+			conservatism > party_popularity@radical_socialism
+			conservatism > party_popularity@social_liberalism
+			conservatism > party_popularity@market_liberalism
+		}
+		add_stability = 0.05
+		set_politics = {
+			ruling_party = conservatism
+			elections_allowed = yes
+		}
+		country_event = { id = GER_austria.1 days = 10 }
+	}
+}
+
+country_event = {
+	id = GER_austria.1
+	title = "Austrian Representatives Protest Election Results"
 	desc = GER_diet.5.d
 
 	is_triggered_only = yes
@@ -209,7 +246,7 @@ country_event = {
 }
 
 country_event = {
-	id = GER_diet.6
+	id = GER_austria.2
 	title = "Austrian Surrender"
 	desc = GER_diet.6.d
 
@@ -236,7 +273,7 @@ country_event = {
 }
 
 country_event = {
-	id = GER_diet.7
+	id = GER_austria.3
 	title = "Austria Achieves Independence"
 	desc = GER_diet.7.d
 
@@ -248,22 +285,6 @@ country_event = {
 		news_event = GER_news.2
 		add_stability = -0.1
 		add_war_support = -0.1
-	}
-}
-
-country_event = {
-	id = GER_diet.8
-	title = "Imperial Diet Concludes"
-	desc = GER_diet.8.d
-
-	is_triggered_only = yes
-	fire_only_once = yes
-
-	option = {
-		name = "Empire saved?"
-		add_stability = 0.1
-		add_political_power = 150
-		unlock_national_focus = GER_XVI_imperial_diet
 	}
 }
 

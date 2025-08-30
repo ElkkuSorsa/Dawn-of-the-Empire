@@ -4,9 +4,11 @@ state={
 	name="STATE_153"
 	history={
 		owner = GER
-		add_core_of = GER
 		victory_points = {
 			673 5 
+		}
+		add_dynamic_modifier = {
+			modifier = GER_austrian_unrest
 		}
 		buildings = {
 			infrastructure = 3

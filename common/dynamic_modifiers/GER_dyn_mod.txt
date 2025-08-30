@@ -10,3 +10,14 @@ holy_roman_army = {
 	army_org_factor = hra_aof
 	custom_modifier_tooltip = cannot_change_conscription
 }
+
+GER_austrian_unrest = {
+	remove_trigger = {
+		NOT = {
+			controller = GER
+		}
+	}
+	resistance_target = 0.1
+	resistance_damage_to_garrison = 0.3
+	no_compliance_gain = 1
+}

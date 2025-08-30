@@ -1,12 +1,13 @@
 AUS_struggle_for_independence_category = {
 	AUS_independence_timer = {
-		allowed = {
+		visible = {
 			tag = AUS
 		}
 		days_mission_timeout = 120
 		available = {
 			has_war = no
 		}
+		fire_only_once = yes
 		is_good = no
 		timeout_effect = {
 			white_peace = GER
@@ -14,5 +15,88 @@ AUS_struggle_for_independence_category = {
 				country_event = GER_diet.7
 			}
 		}
+	}
+}
+
+GER_elections_of_1936_category = {
+	GER_elections_of_1936 = {
+		priority = 100
+		visible = {
+			tag = GER
+			has_country_flag = elections_1936_active
+		}
+		activation = {
+			has_country_flag = elections_1936_active
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = "Elections of 1936"
+				always = no
+			}
+		}
+		days_mission_timeout = 100
+		is_good = no
+		fire_only_once = yes
+		timeout_effect = {
+			country_event = GER_elections.1
+			clr_country_flag = elections_1936_active
+		}
+	}
+
+	GER_endorse_communists = {
+		visible = {
+			tag = GER
+			has_country_flag = elections_1936_active
+		}
+		available = {
+			radical_socialism < 0.30
+		}
+		days_remove = 30
+		modifier = {
+			radical_socialism_drift = 0.2
+		}
+		days_re_enable = 10
+	}
+	GER_endorse_social_democrats = {
+		visible = {
+			tag = GER
+			has_country_flag = elections_1936_active
+		}
+		available = {
+			democratic_socialism < 0.30
+		}
+		days_remove = 30
+		modifier = {
+			democratic_socialism_drift = 0.2
+		}
+		days_re_enable = 10
+	}
+	GER_endorse_centrists = {
+		visible = {
+			tag = GER
+			has_country_flag = elections_1936_active
+		}
+		available = {
+			social_liberalism < 0.30
+		}
+		days_remove = 30
+		modifier = {
+			social_liberalism_drift = 0.2
+		}
+		days_re_enable = 10
+	}
+	GER_endorse_right_wing = {
+		visible = {
+			tag = GER
+			has_country_flag = elections_1936_active
+		}
+		available = {
+			conservatism < 0.30
+		}
+		days_remove = 30
+		modifier = {
+			conservatism_drift = 0.2
+		}
+		days_re_enable = 10
 	}
 }

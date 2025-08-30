@@ -12,6 +12,9 @@ state=
 		buildings = {
 			infrastructure = 3
 		}
+		add_dynamic_modifier = {
+			modifier = GER_austrian_unrest
+		}
 		victory_points = {
 			665 1
 		}

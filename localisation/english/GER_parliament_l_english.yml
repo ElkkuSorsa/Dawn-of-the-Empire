@@ -1,0 +1,24 @@
+﻿l_english:
+ GER_reichtag: "Reichtag"
+
+ parliament_main_icon_tt: "[GetParliamentSeatName] - [GetParliamentPartyName]"
+ parliament_seat_text: "Seat [?temp_seat|Y0]"
+ parliament_member_text: "[GetParliamentPartyName] - [?parliament_seat_array^parliament_member_index] Seats [GetParliamentPartyAlliance]"
+ parliament_party_description: "[GetParliamentPartyDesc]"
+
+ parliament_ruling: "(§2Coalition§!)"
+
+ party_1_text: "§RCommunist Party of Germany§!"
+ party_1_desc: "§RThe Communist Party of Germany (KPD)§! is a far-left political party that advocates for the establishment of an socialist state in Germany. Founded in the aftermath of World War I, the KPD has a strong base among the working class and is committed to revolutionary socialism, aiming to overthrow the capitalist system through proletarian revolution."
+ party_2_text: "§tSocial Democratic Party of Germany§!"
+ party_2_desc: "§tThe Social Democratic Party of Germany (SPD)§! is a center-left political party that advocates for social democracy and progressive reforms within a capitalist framework. Founded in the 19th century, the SPD has a long history of championing workers' rights, social justice, and democratic governance, aiming to create a more equitable society through parliamentary means."
+ party_3_text: "§YCentre Party§!"
+ party_3_desc: "§YThe Centre Party (Zentrum)§! is a centrist political party in Germany that primarily represents the interests of the Catholic population. Founded in the 19th century, the party advocates for social conservatism, federalism, and the protection of religious freedoms, while also supporting social welfare policies and democratic governance."
+ party_4_text: "§2German People's Party§!"
+ party_4_desc: "§2The German People's Party (DVP)§! is a center-right political party that represents the interests of the middle class and business community. Founded in the aftermath of World War I, the DVP advocates for economic liberalism, free-market policies, and a strong national defense, while also supporting democratic institutions and social stability."
+ party_5_text: "§gGerman National People's Party§!"
+ party_5_desc: "§gThe German National People's Party (DNVP)§! is a right-wing political party that advocates for nationalism, conservatism, and monarchism. Founded in the aftermath of World War I, the DNVP has a strong base among traditionalists and rural populations, promoting a return to pre-war values and opposing the Weimar Republic's democratic institutions."
+ party_6_text: "§gPDP/GDUP§!"
+ party_6_desc: "§gThe German Patriotic Party (PDP) and the All-German Union Party (GDUP)§! are right-wing political parties that advocate for German nationalism, anti-communism, and conservative values. These parties emerged in the aftermath of World War I, promoting a strong national identity and opposing the perceived threats of socialism and communism, while also supporting traditional social structures and a robust national defense."
+ party_7_text: "Independent Austrian Deputies"
+ party_7_desc: "The Independent Austrian Deputies are a group of parliamentarians representing Austrian interests within the German Reichstag. They advocate for the autonomy and cultural identity of Austria, seeking to address the unique political and social issues faced by Austrians in the post-World War I era, while also promoting cooperation with other parties on matters of national importance."

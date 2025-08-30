@@ -12,7 +12,6 @@ state = {
 	history = {
 
 		owner = GER
-		add_core_of = GER
 		add_core_of = AUS
 
 		victory_points = {
@@ -21,6 +20,9 @@ state = {
 
 		victory_points = {
 			732 10
+		}
+		add_dynamic_modifier = {
+			modifier = GER_austrian_unrest
 		}
 
 		buildings = {
