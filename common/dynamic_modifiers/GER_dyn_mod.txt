@@ -1,0 +1,12 @@
+holy_roman_army = {
+	icon = HABSBURG_army
+	conscription_factor = hra_fc
+	max_planning_factor = hra_mpf
+	army_attack_factor = hra_aaf
+	experience_gain_army_factor = hra_egauf
+	army_defense_factor = hra_adf
+	army_speed_factor = hra_asf
+	army_morale_factor = hra_amf
+	army_org_factor = hra_aof
+	custom_modifier_tooltip = cannot_change_conscription
+}

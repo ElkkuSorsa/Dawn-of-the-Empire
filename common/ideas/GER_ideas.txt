@@ -46,34 +46,6 @@ ideas = {
 			}
 		}
 
-		GER_redirected_military_spending = {
-			picture = "generic_neglected_military"
-			modifier = {
-				army_experience_gain_factor = -0.10
-				navy_experience_gain_factor = -0.10
-				air_experience_gain_factor = -0.10
-				land_doctrine_cost_factor = 0.10
-				naval_doctrine_cost_factor = 0.10
-				air_doctrine_cost_factor = 0.10
-				conscription_factor = -0.10
-				consumer_goods_factor = -0.15
-			}
-		}
-
-		GER_focused_military_spending = {
-			picture = "GER_fan_prussian_militarism"
-			modifier = {
-				army_experience_gain_factor = 0.10
-				navy_experience_gain_factor = 0.10
-				air_experience_gain_factor = 0.10
-				land_doctrine_cost_factor = -0.10
-				naval_doctrine_cost_factor = -0.10
-				air_doctrine_cost_factor = -0.10
-				conscription_factor = 0.10
-				consumer_goods_factor = 0.15
-			}
-		}
-
 		CZE_interregnum = {
 			picture = "ROM_king_carol_ii_handled"
 			modifier = {

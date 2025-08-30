@@ -16,6 +16,16 @@ set_politics = {
 	elections_allowed = no
 }
 
+set_autonomy = {
+	target = FIN
+	autonomous_state = autonomy_real_union
+}
+
+set_autonomy = {
+	target = POL
+	autonomous_state = autonomy_real_union
+}
+
 add_ideas = {
 	#laws
 	war_economy

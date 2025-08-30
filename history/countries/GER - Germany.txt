@@ -15,23 +15,29 @@ if = {
 	set_oob = "GER_1936_nsb"
 }
 
-GER = {
-	set_autonomy = {
-		target = BEL
-		autonomous_state = autonomy_constituent_kingdom
-	}
-	set_autonomy = {
-		target = CZE
-		autonomous_state = autonomy_constituent_kingdom
-	}
-	set_autonomy = {
-		target = SWI
-		autonomous_state = autonomy_constituent_kingdom
-	}
-	set_autonomy = {
-		target = IDC
-		autonomous_state = autonomy_colony
-	}
+set_autonomy = {
+	target = BEL
+	autonomous_state = autonomy_constituent_kingdom
+}
+set_autonomy = {
+	target = CZE
+	autonomous_state = autonomy_constituent_kingdom
+}
+set_autonomy = {
+	target = SWI
+	autonomous_state = autonomy_constituent_kingdom
+}
+set_autonomy = {
+	target = IDC
+	autonomous_state = autonomy_colony
+}
+set_autonomy = {
+	target = COG
+	autonomous_state = autonomy_colony
+}
+set_autonomy = {
+	target = MOR
+	autonomous_state = autonomy_colony
 }
 
 recruit_character = GER_hugenberg
@@ -44,6 +50,19 @@ add_ideas = {
 }
 
 country_event = { id = GER_diet.1 days = 5 }
+
+set_variable = { hra_cf = -0.25 }
+set_variable = { hra_mpf = -0.1 }
+set_variable = { hra_aaf = -0.1 }
+set_variable = { hra_egauf = -0.1 }
+set_variable = { hra_adf = -0.05 }
+set_variable = { hra_asf = -0.1 }
+set_variable = { hra_amf = -0.1 }
+set_variable = { hra_aof = -0.15 }
+
+add_dynamic_modifier = {
+	modifier = holy_roman_army
+}
 
 set_popularities = {
 	ultra_nationalism = 5
@@ -209,12 +228,12 @@ IF = {
 	limit = {
 		has_dlc = "Gotterdammerung"
 	}
-	set_stability = 0.7 # Was 0.75, but get 5% from the Reichstag
+	set_stability = 0.5 # Was 0.75, but get 5% from the Reichstag
 	ELSE = {
-		set_stability = 0.75
+		set_stability = 0.55
 	}
 }
-set_war_support = 0.3
+set_war_support = 0.1
 
 if = {
 	limit = {

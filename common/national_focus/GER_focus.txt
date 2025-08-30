@@ -14,70 +14,34 @@ focus_tree = {
 	default = no
 
 	focus = {
-		id = GER_XVI_imperial_diet
+		id = GER_minority_conscription_act
 		icon = GFX_focus_ETH_re-convene_the_parliament
 		x = 0
 		y = 0
 		
 		completion_reward = { 
-			custom_effect_tooltip = GER_XVI_imperial_diet_tt
+			custom_effect_tooltip = GER_minority_conscription_act_tt
+			effect_tooltip = {
+				custom_effect_tooltip = GER_modifiy_holy_roman_army_tt
+				add_to_variable = {
+					variable = HRA_fc
+					value = 0.1
+					tooltip = conscription_factor_tt
+				}
+				add_to_variable = {
+					variable = HRA_mpf
+					value = 0.1
+					tooltip = max_planning_factor_tt
+				}
+				add_to_variable = {
+					variable = HRA_egauf
+					value = 0.05
+					tooltip = experience_gain_army_factor_tt
+				}
+			}
 		} 
 
 		cancelable = no
 		cost = 30
-	}
-
-	focus = {
-		id = GER_support_the_revolution_by_ballot
-		icon = GFX_focus_generic_military_infantry
-		x = -1
-		y = 1
-		
-		prerequisite = { 
-			focus = GER_XVI_imperial_diet
-		}
-
-		mutually_exclusive = {
-			focus = GER_continue_the_prussian_legacy
-		}
-
-		completion_reward = {
-		} 
-
-		cost = 5
-	}
-
-	focus = {
-		id = GER_continue_the_prussian_legacy
-		icon = GFX_focus_generic_military_infantry
-		x = 1
-		y = 1
-		
-		prerequisite = { 
-			focus = GER_XVI_imperial_diet
-		}
-
-		mutually_exclusive = {
-			focus = GER_support_the_revolution_by_ballot
-		}
-
-		completion_reward = {
-		} 
-
-		cost = 5
-	}
-
-	focus = {
-		id = promise_mild_reform
-		icon = GFX_focus_generic_political_reform
-		x = 1
-		y = 2
-		prerequisite = { 
-			focus = GER_continue_the_prussian_legacy
-		}
-
-		completion_reward = {
-		}
-		cost = 5
 	}
 }
