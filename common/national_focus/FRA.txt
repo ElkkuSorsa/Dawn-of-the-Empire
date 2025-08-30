@@ -526,18 +526,37 @@ focus_tree = {
 
         available = {has_government = ultra_nationalism}
 
-        available = {threat > 0.2}
+        available = {
+            has_army_manpower = {
+                size > 800000
+            }
+        }
 
         prerequisite = {focus = FRA_nail_in_the_coffin}
 
 
         completion_reward = { 
         
-        
+        add_war_support = 0.1
 
+        add_political_power = 50
+
+        add_state_claim = 977
+
+        add_state_claim = 980
+
+        add_state_claim = 6
+
+        add_state_claim = 34
+
+        add_state_claim = 51
+
+        add_state_claim = 42
+
+        add_state_claim = 35
         }  
 
-		cost = 5
+		cost = 10
     
 
     }
@@ -659,18 +678,51 @@ focus_tree = {
 
     focus = {
         
-        id = FRA_war_with_italy
-        icon = GFX_focus_attack_italy
-        x = 32
+        id = FRA_pact_with_italy
+        icon = GFX_focus_befriend_italy
+        x = 33
         y = 5
 
         available = {has_government = ultra_nationalism}
+
+        available = {threat > 0.4}
 
         prerequisite = {
             focus = FRA_balkan_politics
             focus = FRA_trade_relations
             focus = FRA_scandinavian_overtures
         }
+
+        mutually_exclusive = {focus = FRA_war_with_italy}
+
+
+        completion_reward = { 
+        
+        
+
+        }  
+
+		cost = 5
+    
+
+    }
+
+    focus = {
+        
+        id = FRA_war_with_italy
+        icon = GFX_focus_attack_italy
+        x = 30
+        y = 5
+
+        available = {has_government = ultra_nationalism}
+
+        available = {threat > 0.4}
+
+        prerequisite = {
+            focus = FRA_balkan_politics
+        }
+
+        mutually_exclusive = {focus = FRA_pact_with_italy}
 
 
         completion_reward = { 
@@ -692,6 +744,8 @@ focus_tree = {
         y = 5
 
         available = {has_government = ultra_nationalism}
+
+        available = {threat > 0.4}
 
         prerequisite = {
             focus = FRA_balkan_politics
@@ -715,7 +769,7 @@ focus_tree = {
         
         id = FRA_reintegrate_new_territories
         icon = GFX_goal_generic_intelligence_exchange
-        x = 30
+        x = 29
         y = 6
 
         available = {has_government = ultra_nationalism}
@@ -748,6 +802,7 @@ focus_tree = {
         prerequisite = {
             focus = FRA_war_with_italy
             focus = FRA_war_with_hre
+            focus = FRA_pact_with_italy
         }
 
 
