@@ -1,0 +1,80 @@
+focus_tree = {
+    id = SOV_focus_tree
+    country = {
+        factor = 0
+
+        modifier = {
+            add = 10
+            tag = SOV
+        }
+    }
+
+    continuous_focus_position = { x = 100 y = 2000 }
+
+    default = no
+
+    focus = {
+
+        id = SOV_russian_golden_age
+        icon = GFX_goal_SOV_russian_golden_age
+        x = 5
+        y = 1
+
+        completion_reward = { 
+        add_timed_idea = { idea = SOV_russian_wealth  days = 120 }
+        } 
+
+		cost = 5
+    }
+
+    focus = {
+
+        id = SOV_tsars_speech
+        icon = GFX_goal_SOV_tsars_speech
+        x = 2
+        y = 1
+        prerequisite = { focus = SOV_russian_golden_age }
+        relative_position_id = SOV_russian_golden_age
+
+        completion_reward = {
+            add_political_power = 50
+            add_stability = 0.05
+        }  
+
+		cost = 5
+    }
+
+    focus = {
+
+        id = SOV_peoples_tsar
+        icon = GFX_goal_SOV_peoples_tsar
+        x = -2
+        y = 1
+        prerequisite = { focus = SOV_russian_golden_age }
+        relative_position_id = SOV_russian_golden_age
+
+        completion_reward = {
+            add_political_power = 50
+            add_stability = 0.05 
+        }  
+
+		cost = 5
+    }
+
+    focus = {
+
+        id = SOV_beginning_of_the_problems
+        icon = GFX_goal_SOV_beginning_of_the_problems
+        x = 2
+        y = 1
+        relative_position_id = SOV_peoples_tsar
+        prerequisite = { focus = SOV_peoples_tsar }
+        prerequisite = { focus = SOV_tsars_speech }
+
+        completion_reward = {
+            custom_effect_tooltip = "Midnight_tt_1"
+        }  
+
+		cost = 10
+    }
+}

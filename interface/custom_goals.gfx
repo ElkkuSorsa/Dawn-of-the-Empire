@@ -1,0 +1,19 @@
+spriteTypes = {	
+
+    SpriteType = {
+	    name = "GFX_goal_SOV_beginning_of_the_problems"
+	    texturefile = "gfx/interface/goals/SOV/SOV_beginning_of_the_problems.dds"			
+	} 
+    SpriteType = {
+	    name = "GFX_goal_SOV_peoples_tsar"
+	    texturefile = "gfx/interface/goals/SOV/SOV_peoples_tsar.dds"			
+	}
+    SpriteType = {
+	    name = "GFX_goal_SOV_russian_golden_age"
+	    texturefile = "gfx/interface/goals/SOV/SOV_russian_golden_age.dds"			
+	}  
+    SpriteType = {
+	    name = "GFX_goal_SOV_tsars_speech"
+	    texturefile = "gfx/interface/goals/SOV/SOV_tsars_speech.dds"			
+	}  
+}  

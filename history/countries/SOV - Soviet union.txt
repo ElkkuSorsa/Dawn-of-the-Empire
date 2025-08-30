@@ -4,15 +4,21 @@ set_stability = 0.25
 set_war_support = 0.3
 capital = 219
 
+recruit_character = SOV_vladimir_kirillovich
+
 set_popularities = {
-	democratic = 5
-	neutrality = 60
-	communism = 5
-	fascism = 30
+	ultra_nationalism = 30
+    despotism = 60
+    oligarchy = 0
+    conservatism = 2
+    social_liberalism = 2
+    market_liberalism = 2
+    democratic_socialism = 1
+    radical_socialism = 3
 }
 
-set_politics = {
-	ruling_party = neutrality
+set_politics = { 
+	ruling_party = despotism
 	elections_allowed = no
 }
 
@@ -30,4 +36,6 @@ add_ideas = {
 	#laws
 	war_economy
 	extensive_conscription
+	SOV_russian_golden_age
+	SOV_victory_in_the_great_war
 }

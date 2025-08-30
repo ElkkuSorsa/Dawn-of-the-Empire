@@ -1,0 +1,14 @@
+characters = {
+	SOV_vladimir_kirillovich = {
+		name = "Vladimir Kirillovich"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_SOV_vladimir_kirillovich"
+			}
+		}
+		country_leader = {
+			ideology = absolute_monarchy
+			traits = { emperor_and_autocrat_of_all_the_russias }
+		}
+	}
+}
