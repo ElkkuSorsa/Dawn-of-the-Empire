@@ -134,11 +134,13 @@ focus_tree = {
 
         completion_reward = { 
         
-        
+        add_political_power = 100
+
+        add_stability = 0.1
 
         }  
 
-		cost = 5
+		cost = 10
     
 
     }
@@ -213,6 +215,35 @@ focus_tree = {
 
     focus = {
         
+        id = FRA_expand_intelligence_services
+        icon = GFX_focus_generic_secret_service_agency
+        x = 30
+        y = 2
+
+        available = {has_government = ultra_nationalism}
+
+        prerequisite = {focus = FRA_nail_in_the_coffin}
+
+        completion_reward = {
+
+        add_stability = 0.05
+        
+        add_ideas = FRA_expanded_spy_network
+
+        create_intelligence_agency = {
+            name = "Deuxième Bureau"
+            icon = GFX_intelligence_agency_logo_agency
+        }
+
+        }  
+
+		cost = 10
+    
+
+    }
+
+    focus = {
+        
         id = FRA_economic_populism
         icon = GFX_focus_RAJ_special_economic_zones
         x = 22
@@ -255,7 +286,11 @@ focus_tree = {
 
         completion_reward = { 
         
-        remove_ideas = FRA_economy_in_shambles
+        swap_ideas = {
+            remove_idea = FRA_economy_in_shambles
+            add_idea = FRA_economy_in_shambles2
+        }
+
 
         }  
 
@@ -302,7 +337,10 @@ focus_tree = {
 
         completion_reward = { 
         
-        remove_ideas = FRA_economy_in_shambles
+        swap_ideas = {
+            remove_idea = FRA_economy_in_shambles
+            add_idea = FRA_economy_in_shambles2
+        }
 
         }  
 

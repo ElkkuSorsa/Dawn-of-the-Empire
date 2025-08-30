@@ -2,10 +2,24 @@ ideas = {
 
 	country = {
 
+        FRA_expanded_spy_network = { 
+			modifier = {
+				agency_upgrade_time = -0.2
+                new_operative_slot_bonus = 2
+			}
+		}
+
         FRA_economy_in_shambles = { 
 			modifier = {
 				production_speed_buildings_factor = -0.15
                 consumer_goods_factor = 0.25
+			}
+		}
+
+        FRA_economy_in_shambles2 = { 
+			modifier = {
+				production_speed_buildings_factor = -0.05
+                consumer_goods_factor = 0.15
 			}
 		}
 
