@@ -20,7 +20,8 @@ focus_tree = {
         x = 25
         y = 0
 
-		
+        available = {has_government = ultra_nationalism}
+
         completion_reward = { 
 
         add_political_power = 25
@@ -46,6 +47,8 @@ focus_tree = {
         icon = GFX_focus_usa_voter_registration_act
         x = 26
         y = 1
+
+        available = {has_government = ultra_nationalism}
 
         prerequisite = {focus = FRA_unify_national_front}
 
@@ -76,6 +79,8 @@ focus_tree = {
         x = 23
         y = 1
 
+        available = {has_government = ultra_nationalism}
+
         prerequisite = {focus = FRA_unify_national_front}
 
         completion_reward = { 
@@ -101,6 +106,8 @@ focus_tree = {
         x = 27
         y = 2
 
+        available = {has_government = ultra_nationalism}
+
         prerequisite = {focus = FRA_nail_in_the_coffin}
 
         completion_reward = { 
@@ -120,6 +127,8 @@ focus_tree = {
         icon = GFX_SOV_japanese_overtures_ccp_2d_sov_compatibility
         x = 26
         y = 3
+
+        available = {has_government = ultra_nationalism}
 
         prerequisite = {focus = FRA_political_purges}
 
@@ -141,6 +150,8 @@ focus_tree = {
         x = 28
         y = 3
 
+        available = {has_government = ultra_nationalism}
+
         prerequisite = {focus = FRA_political_purges}
 
         completion_reward = { 
@@ -160,6 +171,8 @@ focus_tree = {
         icon = GFX_focus_generic_improve_the_administration
         x = 27
         y = 5
+
+        available = {has_government = ultra_nationalism}
 
         prerequisite = {focus = FRA_revise_legislation}
 
@@ -183,6 +196,8 @@ focus_tree = {
         x = 24
         y = 2
 
+        available = {has_government = ultra_nationalism}
+
         prerequisite = {focus = FRA_nail_in_the_coffin}
 
         completion_reward = { 
@@ -202,6 +217,8 @@ focus_tree = {
         icon = GFX_focus_RAJ_special_economic_zones
         x = 22
         y = 3
+
+        available = {has_government = ultra_nationalism}
 
         prerequisite = {focus = FRA_nail_in_the_coffin}
 
@@ -226,6 +243,7 @@ focus_tree = {
         x = 21
         y = 4
 
+        available = {has_government = ultra_nationalism}
 
         mutually_exclusive = {focus = FRA_laissez_faire_policies}
 
@@ -251,6 +269,8 @@ focus_tree = {
         icon = GFX_focus_DEN_heavy_regulations
         x = 21
         y = 5
+
+        available = {has_government = ultra_nationalism}
 
         prerequisite = {focus = FRA_dirigist_economics}
 
@@ -278,6 +298,8 @@ focus_tree = {
             NOT = {has_idea = FRA_economic_populism_idea}
         }
 
+        available = {has_government = ultra_nationalism}
+
         completion_reward = { 
         
         remove_ideas = FRA_economy_in_shambles
@@ -300,13 +322,10 @@ focus_tree = {
             focus = FRA_dirigist_economics
         }
 
-        available = {
-            NOT = {has_idea = FRA_economic_populism_idea}
-        }
+        available = {has_government = ultra_nationalism}
 
         completion_reward = { 
         
-        remove_ideas = FRA_economy_in_shambles
 
         }  
 
@@ -320,7 +339,7 @@ focus_tree = {
         icon = GFX_focus_CHL_enlarge_the_textile_industries
         x = 25
         y = 5
-
+        
         prerequisite = {
             focus = FRA_laissez_faire_policies
         }
@@ -328,6 +347,8 @@ focus_tree = {
         available = {
             NOT = {has_idea = FRA_economic_populism_idea}
         }
+
+        available = {has_government = ultra_nationalism}
 
         completion_reward = { 
         
@@ -345,6 +366,10 @@ focus_tree = {
         icon = GFX_focus_generic_vichy_france_triumphant_focus
         x = 18
         y = 2
+
+        available = {has_government = ultra_nationalism}
+
+        available = {ultra_nationalism > 0.5}
 
         prerequisite = {focus = FRA_nail_in_the_coffin}
 
@@ -364,10 +389,12 @@ focus_tree = {
         
         id = FRA_increase_defence_spending
         icon = GFX_SOV_expand_the_aircraft_industry_ccp_2d_sov_compatibility
-        x = 14
-        y = 3
+        x = 29
+        y = 4
 
-        prerequisite = {focus = FRA_building_a_new_state}
+        available = {has_government = ultra_nationalism}
+
+        prerequisite = {focus = FRA_army_loyalty}
 
         completion_reward = { 
         
@@ -388,6 +415,10 @@ focus_tree = {
         icon = GFX_focus_generic_attack_vichy_france
         x = 17
         y = 3
+
+        available = {has_government = ultra_nationalism}
+
+        available = {ultra_nationalism > 0.6}
 
         mutually_exclusive = {focus = FRA_corporatist_agenda}
 
@@ -413,6 +444,10 @@ focus_tree = {
         x = 17
         y = 5
 
+        available = {has_government = ultra_nationalism}
+
+        available = {ultra_nationalism > 0.7}
+
         prerequisite = {focus = FRA_militaristic_agenda}
 
         completion_reward = { 
@@ -434,6 +469,10 @@ focus_tree = {
         icon = GFX_focus_ICE_state_corporatism
         x = 19
         y = 3
+
+        available = {has_government = ultra_nationalism}
+
+        available = {ultra_nationalism > 0.6}
 
         mutually_exclusive = {focus = FRA_militaristic_agenda}
 
@@ -459,6 +498,10 @@ focus_tree = {
         x = 19
         y = 5
 
+        available = {has_government = ultra_nationalism}
+
+        available = {ultra_nationalism > 0.7}
+
         prerequisite = {focus = FRA_corporatist_agenda}
 
         completion_reward = { 
@@ -478,12 +521,15 @@ focus_tree = {
         
         id = FRA_assert_revanchist_claims
         icon = GFX_focus_focus_fra_border
-        x = 23
-        y = 6
+        x = 34
+        y = 2
 
-        prerequisite = {focus = FRA_secured_administration}
+        available = {has_government = ultra_nationalism}
 
-        prerequisite = {focus = FRA_army_state focus = FRA_french_corporate_state}
+        available = {threat > 0.2}
+
+        prerequisite = {focus = FRA_nail_in_the_coffin}
+
 
         completion_reward = { 
         
@@ -493,6 +539,352 @@ focus_tree = {
 
 		cost = 5
     
+
+    }
+
+    focus = {
+        
+        id = FRA_negotiate_with_uk
+        icon = GFX_focus_chi_british_cooperation
+        x = 35
+        y = 3
+
+        available = {has_government = ultra_nationalism}
+
+        prerequisite = {focus = FRA_assert_revanchist_claims}
+
+
+        completion_reward = { 
+        
+        
+
+        }  
+
+		cost = 5
+    
+
+    }
+
+    focus = {
+        
+        id = FRA_trade_relations
+        icon = GFX_focus_generic_british_trade
+        x = 34
+        y = 4
+
+        available = {has_government = ultra_nationalism}
+
+        prerequisite = {focus = FRA_negotiate_with_uk}
+
+
+        completion_reward = { 
+        
+        
+
+        }  
+
+		cost = 5
+    
+
+    }
+
+    focus = {
+        
+        id = FRA_scandinavian_overtures
+        icon = GFX_SOV_control_scandinavia_ccp_2d_sov_compatibility
+        x = 36
+        y = 4
+
+        available = {has_government = ultra_nationalism}
+
+        prerequisite = {focus = FRA_negotiate_with_uk}
+
+
+        completion_reward = { 
+        
+        
+
+        }  
+
+		cost = 5
+    
+
+    }
+
+    focus = {
+        
+        id = FRA_negotiate_with_rus
+        icon = GFX_SOV_patriarch_of_all_russia_ccp_2d_sov_compatibility
+        x = 31
+        y = 3
+
+        available = {has_government = ultra_nationalism}
+
+        prerequisite = {focus = FRA_assert_revanchist_claims}
+
+
+        completion_reward = { 
+        
+        
+
+        }  
+
+		cost = 5
+    
+
+    }
+
+    focus = {
+        
+        id = FRA_balkan_politics
+        icon = GFX_focus_BUL_free_balkan_states
+        x = 31
+        y = 4
+
+        available = {has_government = ultra_nationalism}
+
+        prerequisite = {focus = FRA_negotiate_with_rus}
+
+
+        completion_reward = { 
+        
+        
+
+        }  
+
+		cost = 5
+    
+
+    }
+
+    focus = {
+        
+        id = FRA_war_with_italy
+        icon = GFX_focus_attack_italy
+        x = 32
+        y = 5
+
+        available = {has_government = ultra_nationalism}
+
+        prerequisite = {
+            focus = FRA_balkan_politics
+            focus = FRA_trade_relations
+            focus = FRA_scandinavian_overtures
+        }
+
+
+        completion_reward = { 
+        
+        
+
+        }  
+
+		cost = 5
+    
+
+    }
+
+    focus = {
+        
+        id = FRA_war_with_hre
+        icon = GFX_goal_generic_territory_or_war
+        x = 35
+        y = 5
+
+        available = {has_government = ultra_nationalism}
+
+        prerequisite = {
+            focus = FRA_balkan_politics
+            focus = FRA_trade_relations
+            focus = FRA_scandinavian_overtures
+        }
+
+
+        completion_reward = { 
+        
+        
+
+        }  
+
+		cost = 5
+    
+
+    }
+
+    focus = {
+        
+        id = FRA_reintegrate_new_territories
+        icon = GFX_goal_generic_intelligence_exchange
+        x = 30
+        y = 6
+
+        available = {has_government = ultra_nationalism}
+
+        prerequisite = {
+            focus = FRA_war_with_italy
+             focus = FRA_war_with_hre
+        }
+
+
+        completion_reward = { 
+        
+        
+
+        }  
+
+		cost = 5
+    
+
+    }
+
+    focus = {   
+        id = FRA_new_europe
+        icon = GFX_focus_GER_european_confederation
+        x = 33
+        y = 6
+
+        available = {has_government = ultra_nationalism}
+
+        prerequisite = {
+            focus = FRA_war_with_italy
+            focus = FRA_war_with_hre
+        }
+
+
+        completion_reward = { 
+        
+        
+
+        }  
+
+		cost = 5
+    
+
+    }
+
+    focus = {   
+        id = FRA_economic_ties
+        icon = GFX_SOV_planned_economy_ccp_2d_sov_compatibility
+        x = 32
+        y = 7
+
+        available = {has_government = ultra_nationalism}
+
+        prerequisite = {
+            focus = FRA_new_europe
+        }
+
+
+        completion_reward = { 
+        
+        
+
+        }  
+
+		cost = 5
+    
+
+    }
+
+    focus = {   
+        id = FRA_nationalist_values
+        icon = GFX_focus_generic_spread_fascism
+        x = 34
+        y = 7
+
+        available = {has_government = ultra_nationalism}
+
+        prerequisite = {
+            focus = FRA_new_europe
+        }
+
+
+        completion_reward = { 
+        
+        
+
+        }  
+
+		cost = 5
+    
+
+    }
+
+    focus = {   
+        id = FRA_new_continental_system
+        icon = GFX_focus_fra_le_deluge
+        x = 33
+        y = 8
+
+        available = {has_government = ultra_nationalism}
+
+        prerequisite = {
+            focus = FRA_nationalist_values
+        }
+
+        prerequisite = {
+            focus = FRA_economic_ties
+        }
+
+
+        completion_reward = { 
+        
+        
+
+        }  
+
+		cost = 5
+    
+
+    }
+
+    focus = {
+        
+        id = FRA_support_austria
+        icon = GFX_focus_AUS_diplomatic_effort
+        x = 33
+        y = 3
+
+        available = {has_government = ultra_nationalism}
+
+        prerequisite = {focus = FRA_assert_revanchist_claims}
+
+
+        completion_reward = { 
+        
+        
+
+        }  
+
+		cost = 5
+    
+
+    }
+
+    focus = {
+        
+        id = FRA_total_defence_state
+        icon = GFX_focus_SWI_fortify_border_with_france
+        x = 22
+        y = 6
+
+        available = {has_government = ultra_nationalism}
+
+        available = {ultra_nationalism > 0.8}
+
+        prerequisite = {
+            focus = FRA_army_state
+            focus = FRA_french_corporate_state
+        }
+
+        prerequisite = { focus = FRA_secured_administration}
+
+        completion_reward = { 
+        
+
+        }  
+
+		cost = 5
 
     }
 
