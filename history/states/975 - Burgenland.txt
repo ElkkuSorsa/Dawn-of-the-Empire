@@ -12,6 +12,7 @@ state = {
 
 		owner = GER
 		add_core_of = AUS
+		set_compliance = 25
 
 		victory_points = {
 			3700 1 

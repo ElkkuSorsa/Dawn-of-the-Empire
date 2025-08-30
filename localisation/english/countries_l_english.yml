@@ -157,6 +157,8 @@
  CZE_ADJ: "Czechian"
  CZE_GER_subject: "Bohemia"
  CZE_GER_subject_DEF: "the Kingdom of Bohemia"
+ CZE_republic: "Czech Republic"
+ CZE_republic_DEF: "the Czech Republic"
  POL: "Poland"
  POL_DEF: "Poland"
  POL_ADJ: "Polish"

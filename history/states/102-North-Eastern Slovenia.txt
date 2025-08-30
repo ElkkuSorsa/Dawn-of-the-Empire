@@ -9,6 +9,7 @@ state=
 	history =
 	{
 		owner = GER
+		set_compliance = 25
 		buildings = {
 			infrastructure = 3
 		}

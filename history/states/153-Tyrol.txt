@@ -4,6 +4,7 @@ state={
 	name="STATE_153"
 	history={
 		owner = GER
+		set_compliance = 25
 		victory_points = {
 			673 5 
 		}

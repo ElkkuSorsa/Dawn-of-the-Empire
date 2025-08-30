@@ -1,5 +1,7 @@
 ﻿l_english:
  GER_reichtag: "Reichtag"
+ parliament_main_text: "Reichtag"
+ parliament_description_text: "Consisting of §Y700§! seats, atleast §Y351§! are required for majority."
 
  parliament_main_icon_tt: "[GetParliamentSeatName] - [GetParliamentPartyName]"
  parliament_seat_text: "Seat [?temp_seat|Y0]"

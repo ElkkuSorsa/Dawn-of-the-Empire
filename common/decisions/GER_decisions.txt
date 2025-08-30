@@ -100,3 +100,22 @@ GER_elections_of_1936_category = {
 		days_re_enable = 10
 	}
 }
+
+GER_reichtag = {
+	GER_constitutional_amendmend_on_constituents_law = {
+		visible = {
+			tag = GER
+			has_completed_focus = GER_constitutional_amendmend_on_constituents
+		}
+		activation = {
+		}
+		available = {
+		}
+		days_remove = 70
+		is_good = no
+		fire_only_once = yes
+		remove_effect = {
+			
+		}
+	}
+}

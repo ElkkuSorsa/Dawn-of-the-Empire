@@ -9,6 +9,7 @@ state=
 	history =
 	{
 		owner = GER
+		set_compliance = 25
 		add_dynamic_modifier = {
 			modifier = GER_austrian_unrest
 		}

@@ -1,6 +1,7 @@
 add_namespace = GER_reichtag
 add_namespace = GER_news
 add_namespace = GER_elections
+add_namespace = GER_minorities
 
 country_event = {
 	id = GER_reichtag.1
@@ -47,9 +48,54 @@ country_event = {
 
 	option = {
 		name = "Kaiser will call for new elections!"
+		unlock_national_focus = GER_minority_conscription_act
+		clr_country_flag = GER_zentrum_allied
 		custom_effect_tooltip = GER_new_elections_tt
 		promote_character = GER_reichtag
 		set_country_flag = elections_1936_active
+	}
+}
+
+country_event = {
+	id = GER_minorities.1
+	title = "Constitutional amendment on allowing republican constituents"
+	desc = GER_minorities.1.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = "A step towards modernity."
+		news_event = GER_minorities.2
+	}
+}
+
+news_event = {
+	id = GER_minorities.2
+	title = "Bohemia declares a republic"
+	desc = GER_minorities.2.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			CZE = {
+				set_politics = {
+					ruling_party = social_liberalism
+					elections_allowed = yes
+				}
+				add_stability = 0.1
+				add_war_support = 0.1
+				remove_ideas = CZE_interregnum
+				add_ideas = CZE_czech_republic
+				set_cosmetic_tag = CZE_republic
+			}
+		}
+	}
+
+	option = {
+		name = "The empire must be preserved!"
 	}
 }
 

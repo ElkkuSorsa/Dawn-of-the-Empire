@@ -39,6 +39,8 @@ state = {
                 }
             }
 		}
+
+		set_compliance = 25
 		
 		1938.3.12 = {
 			owner = GER

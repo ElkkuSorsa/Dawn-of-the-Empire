@@ -14,6 +14,7 @@ state = {
 
 		owner = GER
 		add_core_of = AUS
+		set_compliance = 25
 
 		buildings = {
 			infrastructure = 3 #was: 6
