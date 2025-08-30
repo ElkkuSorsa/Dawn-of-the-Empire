@@ -1,0 +1,83 @@
+focus_tree = {
+	id = GER_focus_tree
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = GER
+		}
+	}
+
+	continuous_focus_position = { x = 100 y = 2000 }
+
+	default = no
+
+	focus = {
+		id = GER_XVI_imperial_diet
+		icon = GFX_focus_ETH_re-convene_the_parliament
+		x = 0
+		y = 0
+		
+		completion_reward = { 
+			custom_effect_tooltip = GER_XVI_imperial_diet_tt
+		} 
+
+		cancelable = no
+		cost = 30
+	}
+
+	focus = {
+		id = GER_support_the_revolution_by_ballot
+		icon = GFX_focus_generic_military_infantry
+		x = -1
+		y = 1
+		
+		prerequisite = { 
+			focus = GER_XVI_imperial_diet
+		}
+
+		mutually_exclusive = {
+			focus = GER_continue_the_prussian_legacy
+		}
+
+		completion_reward = {
+		} 
+
+		cost = 5
+	}
+
+	focus = {
+		id = GER_continue_the_prussian_legacy
+		icon = GFX_focus_generic_military_infantry
+		x = 1
+		y = 1
+		
+		prerequisite = { 
+			focus = GER_XVI_imperial_diet
+		}
+
+		mutually_exclusive = {
+			focus = GER_support_the_revolution_by_ballot
+		}
+
+		completion_reward = {
+		} 
+
+		cost = 5
+	}
+
+	focus = {
+		id = promise_mild_reforms
+		icon = GFX_focus_generic_political_reform
+		x = 1
+		y = 2
+		prerequisite = { 
+			focus = GER_continue_the_prussian_legacy
+		}
+
+		completion_reward = {
+		}
+		cost = 5
+	}
+}

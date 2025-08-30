@@ -1,0 +1,18 @@
+AUS_struggle_for_independence_category = {
+	AUS_independence_timer = {
+		allowed = {
+			tag = AUS
+		}
+		days_mission_timeout = 120
+		available = {
+			has_war = no
+		}
+		is_good = no
+		timeout_effect = {
+			white_peace = GER
+			GER = {
+				country_event = GER_diet.7
+			}
+		}
+	}
+}

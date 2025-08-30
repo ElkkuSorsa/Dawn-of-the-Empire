@@ -36,6 +36,15 @@ GER = {
 
 recruit_character = GER_hugenberg
 
+add_ideas = {
+	GER_empire_of_compromises
+	GER_socialist_pressure
+	GER_austrian_nationalism
+	GER_victory_in_the_weltkrieg
+}
+
+country_event = { id = GER_diet.1 days = 5 }
+
 set_popularities = {
 	ultra_nationalism = 5
 	despotism = 15
